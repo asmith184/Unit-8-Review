@@ -34,28 +34,48 @@ th, td{
 /* Table Caption Styles */
 
 caption{
-   vertical-align: bottom;
+   caption-side: bottom;
    text-align: center;
 }
 
 /* Table Column Styles */
 
-col.timeColumn col{
+col.timeColumn{
    width: 10%;
    background: rgb(215, 205, 151);
 }
 
-col.wDayColumns col{
+col.wDayColumns{
+   width: 11%;
+   background: rgb(236, 255, 211);
+}
 
+col.wEndColumns{
+   width: 17%;
+   background: rgb(255, 231, 255);
 }
 
 /* Table Header Styles */
 
+thead{
+   color: white;
+   background: rgb(105, 177, 60);
+}
 
+thead th:first-of-type{
+   background: rgb(153, 86, 7);
+}
+
+thead th:nth-of-type(7), thead th:nth-of-type(8){
+   background: rgb(153, 0, 153);
+}
 
 /* Table Footer Styles */
 
-
+tfoot{
+   background: black;
+   color: white;
+}
 
 
 
